@@ -1,0 +1,89 @@
+<div class="container mt-5">
+  <div class="row">
+
+    <div class="card mx-auto align-middle">
+      <div class="card-body mx-auto">
+        <div class="card-title">
+          {{calculator-screen}}
+        </div>
+
+        <div class="btn-group mx-auto d-flex" role="toolbar">
+
+
+              <button class="btn btn-outline-secondary btn-lg w-30" {{action "input" "7" on="mouseUp"}}>7
+              </button>
+
+
+              <button class="btn btn-outline-secondary btn-lg w-30" {{action "input" "8" on="mouseUp"}}>8
+              </button>
+
+
+              <button class="btn btn-outline-secondary btn-lg w-30" {{action "input" "9" on="mouseUp"}}>9
+              </button>
+
+
+              <button class="btn btn-outline-secondary btn-lg w-30" {{action "input" "/" on="mouseUp"}}>/
+              </button>
+
+        </div><!-- .btn-toolbar -->
+
+        <div class="btn-group mx-auto d-flex" role="toolbar">
+
+
+              <button class="btn btn-outline-secondary btn-lg w-30" {{action "input" "4" on="mouseUp"}}>4
+              </button>
+
+              <button class="btn btn-outline-secondary btn-lg w-30" {{action "input" "5" on="mouseUp"}}>5
+              </button>
+
+              <button class="btn btn-outline-secondary btn-lg w-30" {{action "input" "6" on="mouseUp"}}>6
+              </button>
+
+              <button class="btn btn-outline-secondary btn-lg w-30" {{action "input" "*" on="mouseUp"}}>*
+              </button>
+
+        </div><!-- .btn-toolbar -->
+
+        <div class="btn-group mx-auto d-flex" role="toolbar">
+
+
+              <button class="btn btn-outline-secondary btn-lg w-30" {{action "input" "1" on="mouseUp"}}>1
+              </button>
+
+              <button class="btn btn-outline-secondary btn-lg w-30" {{action "input" "2" on="mouseUp"}}>2
+              </button>
+
+              <button class="btn btn-outline-secondary btn-lg w-30" {{action "input" "3" on="mouseUp"}}>3
+              </button>
+
+              <button class="btn btn-outline-secondary btn-lg w-30" {{action "input" "-" on="mouseUp"}}>-
+              </button>
+
+
+        </div><!-- .btn-toolbar -->
+
+        <div class="btn-group mx-auto d-flex" role="toolbar">
+
+              <button class="btn btn-outline-secondary btn-lg w-30" {{action "input" "0" on="mouseUp"}}>0
+              </button>
+
+              <button class="btn btn-outline-secondary btn-lg w-30" {{action "input" "." on="mouseUp"}}>.
+              </button>
+
+              <button class="btn btn-outline-secondary btn-lg w-30" {{action "input" "clear"on="mouseUp"}}>c</button>
+
+              <button class="btn btn-outline-secondary btn-lg w-30" {{action "input" "+" on="mouseUp"}}>+
+              </button>
+
+        </div><!-- .btn-toolbar -->
+
+      <div class="co-xs-12">
+        <button class="btn btn-outline-secondary btn-lg btn-block mt-2" {{action "input" "enter" on="mouseUp"}}>
+          Enter
+        </button>
+      </div>
+
+    </div><!-- .card-body-->
+  </div><!-- .card -->
+</div><!-- .row -->
+</div><!-- .container -->

@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import "ember-bootstrap/bootstrap";
+@import "_variables";
+@import "_mixins.scss";
+
+body {
+  font: $fonts
+}
+
+input#answer {
+  text-align:right;
+  @include pulsate(1s, 16);
+}
+
+.btn-group {
+  .btn {
+    flex: 1;
+  }
+}
+
+
+
+
