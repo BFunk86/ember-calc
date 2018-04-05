@@ -11,3 +11,41 @@ $calculation-buttons: #FF530D;
 $enter-button: #0011B2;
 
 $background: #727F8C;
+
+$light-primary: #e0e0e0;
+$light-secondary: #858E93;
+
+$dark-primary: #424242;
+$dark-secondary: #80898E;
+
+$color-primary: #1976D2;
+$color-secondary: #D93A30;
+
+$themes: (
+  Light: (
+    backgroundColor: #e0e0e0,
+    textColor: #aeaeae,
+    buttonTextColor: white,
+    buttonTextHoverColor: #61b0e7,
+    buttonColor: #fff,
+    calculationButtonColor: #D93A30,
+    border: 2px solid #424242
+  ),
+  Dark: (
+    backgroundColor: #222,
+    textColor: #ddd,
+    buttonTextColor: #aaa,
+    buttonTextHoverColor: #ddd,
+    buttonColor: #333,
+    calculationButtonColor: #D93A30,
+    border: 2px solid white
+  ),
+  Color: (
+    backgroundColor: #1976D2,
+    textColor: white,
+    buttonTextColor: white,
+    buttonColor: #fff,
+    calculationButtonColor: #D93A30,
+    border: 2px solid #408bbd
+  )
+);

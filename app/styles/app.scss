@@ -16,29 +16,36 @@ card {
   width: 5rem;
 }
 
-.btn-group {
-  .btn {
-    flex: 1;
-  }
-}
-
-.num-btn {
-  background-color: $number-buttons;
-  color: white;
-}
-
-.calc-btn {
-  background-color: $calculation-buttons;
-  color: white;
-}
-
-.enter-btn {
-  background-color: $enter-button;
-  color: white;
-}
-
 .calculator {
   background-color: $background;
+}
+
+.ember-view {
+  @include themify($themes) {
+    color: themed('textColor');
+    background-color: themed('backgroundColor');
+  }
+
+  .btn-group {
+    .btn {
+      flex: 1;
+    }
+  }
+
+  .num-btn {
+    background-color: $number-buttons;
+    color: white;
+  }
+
+  .calc-btn {
+    background-color: $calculation-buttons;
+    color: white;
+  }
+
+  .enter-btn {
+    background-color: $enter-button;
+    color: white;
+  }
 }
 
 

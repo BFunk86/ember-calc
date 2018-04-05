@@ -1,4 +1,8 @@
 {{outlet}}
-{{#each model as |theme|}}
-  <div>{{theme}}</div>
-{{/each}}
+<div class="row mt-5">
+  {{#each themes as |theme|}}
+    <div class="col-sm-4">
+      <div>{{calculator-theme theme=theme}}</div>
+    </div>
+  {{/each}}
+</div>
