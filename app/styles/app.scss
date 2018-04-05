@@ -12,6 +12,10 @@ input#answer {
   @include pulsate(1s, 16);
 }
 
+card {
+  width: 5rem;
+}
+
 .btn-group {
   .btn {
     flex: 1;

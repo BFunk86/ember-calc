@@ -1,10 +1,13 @@
+import Model from 'ember-data/model'
 import DS from 'ember-data';
 
-export default DS.Model.extend({
-  className: DS.attr('string', {
+const { attr } = DS;
+
+export default Model.extend({
+  className: attr('string', {
     defaultValue: 'default'
   }),
-  name: DS.attr('string', {
+  name: attr('string', {
     defaultValue: 'default'
   })
 });
