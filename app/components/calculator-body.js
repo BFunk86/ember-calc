@@ -1,4 +1,6 @@
 import Component from '@ember/component';
+import { inject as service } from '@ember/service';
+
 // The calculation to be performed
 let calculation = '';
 // The answer to the calculation
@@ -11,6 +13,7 @@ const sound3 = new Audio('/sound/keyboard_key3.mp3');
 const sounds = [sound1, sound2, sound3];
 
 export default Component.extend({
+  theme: service('themes'),
   actions: {
     input(value) {
       // Generate random number between 0 and 2 in order to play a sound when button is clicked
