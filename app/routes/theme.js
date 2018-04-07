@@ -1,5 +1,5 @@
 import Route from '@ember/routing/route';
-import {set} from '@ember/object';
+import RSVP from 'rsvp';
 
 export default Route.extend({
   model() {
@@ -8,10 +8,10 @@ export default Route.extend({
       className: 'defualt',
       name: 'Default'
     });
-    return this.store.findAll('theme');
-  },
-  // Change the model name to themes to make the template more readable
-  setupController(controller, model) {
-    set(controller, 'themes', model)
+    return RSVP.hash({
+      user: this.get('store').query('user', { id: 0 }),
+      themes: this.get('store').findAll('theme')
+    });
   }
+
 });

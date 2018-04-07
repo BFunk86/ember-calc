@@ -1,1 +1,3 @@
-{{calculator-body}}
+{{#each model as |user|}}
+  {{calculator-body theme=user.theme}}
+{{/each}}

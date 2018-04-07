@@ -1,8 +1,15 @@
 {{outlet}}
 <div class="row mt-5">
-  {{#each themes as |theme|}}
+  {{#each model.themes as |theme|}}
     <div class="col-sm-4">
-      <div>{{calculator-theme theme=theme}}</div>
+      <div class="card mb-5">
+        <div class="card-header theme-{{theme.className}}">{{theme.name}} Theme</div>
+        <div class="card-body">
+          <h5 class="card-title">{{theme.name}}</h5>
+          <p class="card-text">Your standard {{theme.name}} themed calculator</p>
+          <button class="btn" {{action "select" theme.name}}>Select Theme</button>
+        </div>
+      </div>
     </div>
   {{/each}}
 </div>
