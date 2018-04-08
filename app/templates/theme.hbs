@@ -3,11 +3,11 @@
   {{#each model.themes as |theme|}}
     <div class="col-sm-4">
       <div class="card mb-5">
-        <div class="card-header theme-{{theme.className}}">{{theme.name}} Theme</div>
-        <div class="card-body">
+        <div class="card-header {{theme.className}}-header}">{{theme.name}} Theme</div>
+        <div class="card-body {{theme.className}}-body">
           <h5 class="card-title">{{theme.name}}</h5>
           <p class="card-text">Your standard {{theme.name}} themed calculator</p>
-          <button class="btn" {{action "select" theme.name}}>Select Theme</button>
+          <button class="btn {{theme.className}}-button" {{action "select" theme.className}}>Select Theme</button>
         </div>
       </div>
     </div>

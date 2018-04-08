@@ -12,40 +12,26 @@ $enter-button: #0011B2;
 
 $background: #727F8C;
 
-$light-primary: #e0e0e0;
-$light-secondary: #858E93;
+/* Light Color Scheme */
+$light-background: #ffffff;
+$light-button: #f4f4f4;
+$light-operators:#d2d2d2;
+$light-enter: #4a8cf6;
+$light-color: #31242A;
+$light-border: #ebebeb;
 
-$dark-primary: #424242;
-$dark-secondary: #80898E;
+/* Dark Color Scheme */
+$dark-background: #303030;
+$dark-button: #424242;
+$dark-operators:#212121;
+$dark-enter: #4a8cf6;
+$dark-color: #F5F5F5;
+$dark-border: rgba(0, 0, 0, 0.14);
 
-$color-primary: #1976D2;
-$color-secondary: #D93A30;
-
-$themes: (
-  Light: (
-    backgroundColor: #e0e0e0,
-    textColor: #aeaeae,
-    buttonTextColor: white,
-    buttonTextHoverColor: #61b0e7,
-    buttonColor: #fff,
-    calculationButtonColor: #D93A30,
-    border: 2px solid #424242
-  ),
-  Dark: (
-    backgroundColor: #222,
-    textColor: #ddd,
-    buttonTextColor: #aaa,
-    buttonTextHoverColor: #ddd,
-    buttonColor: #333,
-    calculationButtonColor: #D93A30,
-    border: 2px solid white
-  ),
-  Color: (
-    backgroundColor: #1976D2,
-    textColor: white,
-    buttonTextColor: white,
-    buttonColor: #fff,
-    calculationButtonColor: #D93A30,
-    border: 2px solid #408bbd
-  )
-);
+/* Colored Color Scheme */
+$color-background: #e1183a;
+$color-button: #4f7ef2;
+$color-operators: #f5c228;
+$color-enter: #24bf5a;
+$color-color: #31242A;
+$color-border: #ebebeb;

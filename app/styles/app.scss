@@ -3,51 +3,157 @@
 @import "_variables";
 @import "_mixins.scss";
 
+
 body {
   font: $fonts
 }
 
 input#answer {
-  text-align:right;
+  text-align: right;
+  background-color: #fff;
   @include pulsate(1s, 16);
 }
 
 card {
   width: 5rem;
+  border: 0px;
+  border-radius: 0.3rem;
 }
 
-.calculator {
+.btn-group {
+  .btn {
+    flex: 1;
+  }
+}
+
+/* Default Theme Styles */
+.default-calculator {
+  background-color: $background;
+  box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.default-num-btn {
+  background-color: $number-buttons;
+  color: white;
+}
+
+.default-calc-btn {
+  background-color: $calculation-buttons;
+  color: white;
+}
+
+.default-enter-btn {
+  background-color: $enter-button;
+  color: white;
+}
+
+.default-header {
+  background-color: $number-buttons;
+}
+
+.default-body {
   background-color: $background;
 }
 
-.ember-view {
-  @include themify($themes) {
-    color: themed('textColor');
-    background-color: themed('backgroundColor');
-  }
-
-  .btn-group {
-    .btn {
-      flex: 1;
-    }
-  }
-
-  .num-btn {
-    background-color: $number-buttons;
-    color: white;
-  }
-
-  .calc-btn {
-    background-color: $calculation-buttons;
-    color: white;
-  }
-
-  .enter-btn {
-    background-color: $enter-button;
-    color: white;
-  }
+.default-button {
+  background-color: $enter-button;
 }
 
+/* Light Theme Styles */
+.light-calculator {
+  background-color: $light-background;
+  color: $light-color;
+}
 
+.light-num-btn {
+  background-color: $light-button;
+}
 
+.light-calc-btn {
+  background-color: $light-operators;
+}
 
+.light-enter-btn {
+  background-color: $light-enter;
+  color: white;
+}
+
+.light-header {
+  background-color: $light-enter;
+}
+
+.light-body {
+  background-color: $light-background;
+}
+
+.light-button {
+  background-color: $light-button;
+}
+
+/* Dark Theme Styles */
+.dark-calculator {
+  background-color: $dark-background;
+  color: $dark-color;
+}
+
+.dark-num-btn {
+  background-color: $dark-button;
+}
+
+.dark-calc-btn {
+  background-color: $dark-operators;
+}
+
+.dark-enter-btn {
+  background-color: $dark-enter;
+  color: white;
+}
+
+.dark-header {
+  background-color: $dark-button;
+  color: white;
+}
+
+.dark-body {
+  background-color: $dark-background;
+  color: white;
+}
+
+.dark-button {
+  background-color: $dark-button;
+  color: white;
+}
+
+/* Color Theme Styles */
+.colors-calculator {
+  background-color: $color-background;
+  color: $dark-color;
+}
+
+.colors-num-btn {
+  background-color: $color-button;
+}
+
+.colors-calc-btn {
+  background-color: $color-operators;
+}
+
+.colors-enter-btn {
+  background-color: $color-enter;
+  color: white;
+}
+
+.colors-header {
+  background-color: $color-button;
+  color: white;
+}
+
+.colors-body {
+  background-color: $color-background;
+  color: white;
+}
+
+.colors-button {
+  background-color: $color-enter;
+  color: white;
+}
